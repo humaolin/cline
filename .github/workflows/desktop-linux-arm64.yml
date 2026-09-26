@@ -22,6 +22,10 @@ name: desktop-linux-arm64
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/desktop-linux-arm64.yml
 
 permissions:
   contents: read
